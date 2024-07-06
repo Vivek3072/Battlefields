@@ -4,7 +4,7 @@ export default function MainInfo() {
   const [settings, setSettings] = useState({});
 
   const fetchSettings = async () => {
-    const resp = await fetch("http://localhost:3000/settings");
+    const resp = await fetch("https://battlefields-backend.onrender.com/settings");
     const data = await resp.json();
     setSettings(data);
     console.log(data);

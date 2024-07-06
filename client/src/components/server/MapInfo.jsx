@@ -4,7 +4,7 @@ export default function MapInfo() {
   const [maps, setMaps] = useState([]);
 
   const fetchMaps = async () => {
-    const resp = await fetch("http://localhost:3000/maps");
+    const resp = await fetch("https://battlefields-backend.onrender.com/maps");
     const data = await resp.json();
     setMaps(data);
     console.log(data);
