@@ -18,6 +18,7 @@ const corsOptions = {
     process.env.UI_ROOT_URI,
     "http://localhost:3000",
     "http://localhost:5173",
+    "https://battlefields.onrender.com/",
   ],
   credentials: true,
   optionSuccessStatus: 200,
