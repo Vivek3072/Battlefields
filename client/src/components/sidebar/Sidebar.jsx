@@ -33,16 +33,16 @@ const data = [
 ];
 export default function Sidebar() {
   return (
-    <div className="flex flex-row md:flex-col items-center m-auto py-20 space-y-4">
+    <div className="flex flex-row md:flex-col items-center m-auto py-2 md:py-20 space-y-4">
       {data?.map((item) => {
         return (
           <div
             key={item.id}
             className={`${
-              item.id === 3 ? "border-l-2" : "opacity-50"
-            } border-orange-500 w-full`}
+              item.id === 3 ? "border-t-2 md:border-t-0 md:border-l-2" : "opacity-50"
+            } border-orange-500 w-full h-fit grid items-center`}
           >
-            <img className="h-10 w-10 ml-2 rounded" src={item.image} />
+            <img className="h-10 w-10 ml-2 rounded border" src={item.image} />
           </div>
         );
       })}
