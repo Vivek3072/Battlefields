@@ -25,7 +25,7 @@ export default function Info() {
         Server protected by The_K-50 AntiCheat. Vip !Rules, Questions, Request,
         Appeal, Visit us: www.epg.gg | Discord https://discord.gg/3r5NK4d
       </div>
-      <div className="flex flex-row space-x-2 rajdhani-regular">
+      <div className="flex flex-row space-x-2 overflow-x-auto rajdhani-regular">
         <button className="border  border-gray-500 uppercase px-6 py-1 text-white">
           Join
         </button>
